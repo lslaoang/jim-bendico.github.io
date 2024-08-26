@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS - Real Estate Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Real Estate Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">View Listings</a></li>
+                <li><a href="cms.html">Manage Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cms-form">
+        <h2>Add New Property</h2>
+        <form id="propertyForm">
+            <label for="propertyImage">Property Image:</label>
+            <input type="file" id="propertyImage" accept="image/*" required>
+
+            <label for="propertyTitle">Property Title:</label>
+            <input type="text" id="propertyTitle" placeholder="Enter property title" required>
+
+            <label for="propertyLocation">Location:</label>
+            <input type="text" id="propertyLocation" placeholder="Enter property location" required>
+
+            <label for="propertyPrice">Price:</label>
+            <input type="number" id="propertyPrice" placeholder="Enter price" required>
+
+            <label for="propertyDescription">Description:</label>
+            <textarea id="propertyDescription" placeholder="Enter property description" required></textarea>
+
+            <button type="button" onclick="addProperty()">Add Property</button>
+        </form>
+    </section>
+
+    <section class="cms-listings">
+        <h2>Existing Properties</h2>
+        <div id="cmsPropertyList">
+            <!-- Property items will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Listings CMS. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
