@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Real Estate Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by location, price, etc." onkeyup="filterProperties()">
+    </section>
+
+    <section class="property-listings" id="propertyList">
+        <div class="property" data-location="New York" data-price="500000">
+            <img src="property1.jpg" alt="Property 1">
+            <h2>Modern Apartment in New York</h2>
+            <p>Price: ₱500,000</p>
+        </div>
+        <div class="property" data-location="Los Angeles" data-price="750000">
+            <img src="property2.jpg" alt="Property 2">
+            <h2>Luxury Condo in Los Angeles</h2>
+            <p>Price: ₱750,000</p>
+        </div>
+        <div class="property" data-location="Miami" data-price="400000">
+            <img src="property3.jpg" alt="Property 3">
+            <h2>Beach House in Miami</h2>
+            <p>Price: ₱400,000</p>
+        </div>
+        <div class="property" data-location="Makati" data-price="400000">
+            <img src="property3.jpg" alt="Property 3">
+            <h2>Town House in Makati</h2>
+            <p>Price: ₱400,000</p>
+        </div>
+        <div class="property" data-location="Tondo" data-price="400000">
+            <img src="property3.jpg" alt="Property 3">
+            <h2>Town House in Tondo</h2>
+            <p>Price: ₱400,000</p>
+        </div>
+        <div class="property" data-location="BGC" data-price="5000000">
+            <img src="property3.jpg" alt="Property 3">
+            <h2>Condo in BGC</h2>
+            <p>Price: ₱5,000,000</p>
+        </div>
+        <!-- Add more property listings here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
